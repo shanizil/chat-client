@@ -20,9 +20,15 @@ yes:boolean=false;
 
    constructor(private newService : DataService) { }
   ngOnInit() {
-      this.newService.getQuestionById( this.questionNum,(results) => {
-      this.result = results;
-      this.messages.push(this.result);
+      let message = new Message("ברוכים הבאים , אני מומחה וירטואלי");
+      this.messages.push(message);
+       this.newService.getQuestionById( this.questionNum,(results) => {
+         this.messages.push(
+        new Message(results)
+      );
+      // this.newService.getQuestionById( this.questionNum,(results) => {
+      // this.result = results;
+      // this.messages.push(this.result);
        this.corectAnswer = new Array();
   });
 }
