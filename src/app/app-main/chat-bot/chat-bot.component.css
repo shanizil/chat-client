@@ -1,0 +1,59 @@
+body {
+  background: #e5e5ea;
+  width: 500px;
+  margin: 0 auto;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+blockquote {
+  /*margin-left:200px;*/
+  max-width: 500px;
+  height: 500px;
+  overflow: scroll;
+
+}
+blockquote section{
+   margin-left:200px;
+}
+.even{
+  direction: rtl;
+  background: #1289fe;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  width: 200px;
+}
+.odd{
+  direction: rtl;
+  background: red;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  width: 200px;
+  margin-right: 1000px;
+}
+p {
+  direction: rtl;
+  background: #1289fe;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  width: 200px;
+/*float: right;*/
+  }
+  section{
+  direction: rtl;
+  background: red;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  width: 200px;
+  margin-right: 1000px;
+  }
+.input-continer{
+    height: 60px;
+    border-top: 1px solid #ccc;
+}
+.input-continer button{
+    width: 90px;
+}

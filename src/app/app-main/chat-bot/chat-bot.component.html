@@ -1,0 +1,16 @@
+<body>
+    <blockquote class="chat">
+                <p>שלום אני מומחה וירטואלי</p>
+                <p>{{result}}</p>
+                <div *ngIf ="yes">
+                <section *ngFor = "let mg of messages; let evenMess=even ; let oddMess=odd ;" [ngClass]="{odd:oddMess,even:evenMess}">
+                    {{ mg.content }} 
+                </section>
+                </div>
+                     
+    </blockquote>
+    <div class="input-continer">
+     <input type="text" class="inputtext" [(ngModel)]="content" (keydown)="handleSubmit($event)"> 
+       <button class="replay" (click)="send(content)">Send</button>
+    </div>
+</body>
